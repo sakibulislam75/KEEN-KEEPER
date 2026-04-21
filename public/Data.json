@@ -1,0 +1,97 @@
+[{
+        "id": 1,
+        "name": "Arman Hossain",
+        "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+        "email": "arman.hossain@gmail.com",
+        "days_since_contact": 18,
+        "status": "overdue",
+        "tags": ["college", "close friend"],
+        "bio": "Met in BUET during freshman year. We used to pull all-nighters before exams. Now he works at a startup in Dhaka.",
+        "goal": 14,
+        "next_due_date": "2025-07-15"
+    },
+    {
+        "id": 2,
+        "name": "Nadia Rahman",
+        "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+        "email": "nadia.rahman@outlook.com",
+        "days_since_contact": 6,
+        "status": "on-track",
+        "tags": ["work", "mentor"],
+        "bio": "My first manager at the job. She taught me how to communicate with clients. Still meet for coffee every few weeks.",
+        "goal": 10,
+        "next_due_date": "2025-07-24"
+    },
+    {
+        "id": 3,
+        "name": "Sabbir Ahmed",
+        "picture": "https://randomuser.me/api/portraits/men/58.jpg",
+        "email": "sabbir.dev@yahoo.com",
+        "days_since_contact": 28,
+        "status": "overdue",
+        "tags": ["childhood", "neighbor"],
+        "bio": "Grew up on the same street in Chittagong. We played cricket every afternoon. He moved to Sylhet for work two years ago.",
+        "goal": 21,
+        "next_due_date": "2025-07-10"
+    },
+    {
+        "id": 4,
+        "name": "Tania Islam",
+        "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+        "email": "tania.islam@proton.me",
+        "days_since_contact": 11,
+        "status": "almost due",
+        "tags": ["college", "study group"],
+        "bio": "We were in the same study group for three semesters. She is now doing her masters in Canada and we keep in touch over video calls.",
+        "goal": 14,
+        "next_due_date": "2025-07-18"
+    },
+    {
+        "id": 5,
+        "name": "Rifat Karim",
+        "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+        "email": "rifat.karim@gmail.com",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": ["close friend", "gym buddy"],
+        "bio": "Met at the gym three years ago. We motivate each other to stay consistent. Also share a passion for cooking and try new recipes together.",
+        "goal": 7,
+        "next_due_date": "2025-07-27"
+    },
+    {
+        "id": 6,
+        "name": "Mehnaz Begum",
+        "picture": "https://randomuser.me/api/portraits/women/63.jpg",
+        "email": "mehnaz.b@gmail.com",
+        "days_since_contact": 45,
+        "status": "overdue",
+        "tags": ["family friend", "childhood"],
+        "bio": "Our families have known each other for decades. She is like an older sister to me. Life got busy and we drifted but I want to reconnect.",
+        "goal": 30,
+        "next_due_date": "2025-07-05"
+    },
+    {
+        "id": 7,
+        "name": "Tanvir Chowdhury",
+        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "email": "tanvir.c@hotmail.com",
+        "days_since_contact": 9,
+        "status": "almost due",
+        "tags": ["work", "colleague"],
+        "bio": "Sat next to me for two years at the office. We bonded over a shared hatred of Monday meetings. He recently switched to a remote job.",
+        "goal": 10,
+        "next_due_date": "2025-07-19"
+    },
+    {
+        "id": 8,
+        "name": "Priya Sharma",
+        "picture": "https://randomuser.me/api/portraits/women/85.jpg",
+        "email": "priya.sharma@gmail.com",
+        "days_since_contact": 2,
+        "status": "on-track",
+        "tags": ["close friend", "travel buddy"],
+        "bio": "Met on a group trip to Cox's Bazar and we have been inseparable ever since. We plan at least one trip together every year.",
+        "goal": 7,
+        "next_due_date": "2025-07-28"
+    }
+]
