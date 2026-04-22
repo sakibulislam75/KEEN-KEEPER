@@ -10,7 +10,9 @@ import TimelineProvider from './Context/TimelineProvider.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-<TimelineProvider>    <RouterProvider router={Router}></RouterProvider></TimelineProvider>
+<TimelineProvider>  
+    <RouterProvider router={Router}></RouterProvider>
+    </TimelineProvider>
    
   </StrictMode>
 )

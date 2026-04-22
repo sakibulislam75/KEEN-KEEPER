@@ -1,4 +1,4 @@
 import { createContext } from "react";
 
-const TimelineContext=createContext();
+const TimelineContext = createContext();
 export default TimelineContext;

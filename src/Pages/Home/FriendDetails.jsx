@@ -8,25 +8,34 @@ import { FadeLoader } from 'react-spinners';
 import { FiPhoneCall } from 'react-icons/fi';
 import { LuMessageSquareMore } from 'react-icons/lu';
 import { PiVideoCameraLight } from 'react-icons/pi';
-import TimelineContext from '../../Context/TimelineContext';
+import  TimelineContext  from '../../Context/TimelineContext';
+import { toast } from 'react-toastify';
+
 
 const FriendDetails = () => {
   const { id } = useParams();
   const { fData, loading } = UseData();
   const clickedFrnd = fData.find(
-    frnd => frnd.id == (id)
+    frnd => frnd.id == parseInt(id)
   );
 
   const{timeline,setTimeline}=useContext(TimelineContext);
   const handleCheckIn = (method) => {
   const newEntry = {
-    ...clickedFrnd,           // clickedFrnd এর সব data
-    method: method,           // "Call" / "Text" / "Video"
-    date: new Date().toLocaleDateString(),
+    ...clickedFrnd,           
+    method: method,          
+  date: new Date().toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+}),
+
+
   
   };
 
   setTimeline([...timeline, newEntry]);
+  toast.success(`${method} with ${clickedFrnd.name}`);
 };
   if (loading) {
     return <div className='w-10/12 mx-auto mt-25'><FadeLoader className='mx-auto ' color='rgba(36, 77, 63, 1)' /></div>;
@@ -100,7 +109,7 @@ const FriendDetails = () => {
         </div>
         <div className='flex justify-between  bg-white rounded-xl p-6 shadow-sm  mt-4 ml-3 p-6'>
           <div>
-            <h1 className='text-xl'>Relationship Goal</h1>
+            <h1 className='text-xl text-[#244D3F]'>Relationship Goal</h1>
             <h2 className='pt-4 text-gray-400'>Connect every <span className='font-bold'>30 days</span></h2>
 
           </div>

@@ -1,16 +1,17 @@
-import React, { Children } from 'react';
+import React, { Children, useState } from 'react';
 import TimelineContext from './TimelineContext';
 
-const TimelineProvider = ({Children}) => {
-    const [timeline,setTimeline]=([]);
+const TimelineProvider = ({children}) => {
+    
+    const [timeline,setTimeline]=useState([]);
     const data={
         timeline,
         setTimeline
     }
     return (
-        <div>
-            <TimelineContext.Provider value={data}>{Children}</TimelineContext.Provider>
-        </div>
+    
+            <TimelineContext.Provider value={data}>{children}</TimelineContext.Provider>
+   
     );
 };
 

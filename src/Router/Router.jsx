@@ -18,6 +18,10 @@ children:[
         path:'/friens/:id',
         Component:FriendDetails
     }
+    ,{
+        path:'/Timeline',
+        Component:Timeline
+    }
   
 ]
 },{
