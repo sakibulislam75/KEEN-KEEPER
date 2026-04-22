@@ -12,26 +12,12 @@ path:'/',
 Component:RootLayout,
 children:[
     {index:true,Component:Home},
-    {path:'/Timeline',Component:Timeline},
-    {path:'/Stats',Component:Stats},
-      {
-        path:'/friens/:id',
-        Component:FriendDetails
-    }
-    ,{
-        path:'/Timeline',
-        Component:Timeline
-    },
-    {
-        path:'/Timeline',
-        Component:Timeline
-    }
-  
+    {path:'Timeline',Component:Timeline},
+    {path:'Stats',Component:Stats},
+    {path:'friens/:id',Component:FriendDetails},
+    {path:'*',Component:NotFound}
 ]
-},{
-    path:'*',
-    Component:NotFound
-},
+}
 ])
 
 export default Router

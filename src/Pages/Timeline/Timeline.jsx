@@ -4,8 +4,8 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { LuMessageSquareMore } from 'react-icons/lu';
 import { PiVideoCameraLight } from 'react-icons/pi';
 import text from '../../assets/text.png'
-import video from '../../assets/call.png'
-import call from '../../assets/video.png'
+import call from '../../assets/call.png'
+import video from '../../assets/video.png'
 
 const Timeline = () => {
     const { timeline } = useContext(TimelineContext);
