@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import UseData from '../../Hook/UseData';
 import { HiOutlineBellSnooze, HiOutlineChatBubbleLeftRight, HiOutlinePhone } from 'react-icons/hi2';
@@ -8,6 +8,7 @@ import { FadeLoader } from 'react-spinners';
 import { FiPhoneCall } from 'react-icons/fi';
 import { LuMessageSquareMore } from 'react-icons/lu';
 import { PiVideoCameraLight } from 'react-icons/pi';
+import TimelineContext from '../../Context/TimelineContext';
 
 const FriendDetails = () => {
   const { id } = useParams();
@@ -16,6 +17,17 @@ const FriendDetails = () => {
     frnd => frnd.id == (id)
   );
 
+  const{timeline,setTimeline}=useContext(TimelineContext);
+  const handleCheckIn = (method) => {
+  const newEntry = {
+    ...clickedFrnd,           // clickedFrnd এর সব data
+    method: method,           // "Call" / "Text" / "Video"
+    date: new Date().toLocaleDateString(),
+  
+  };
+
+  setTimeline([...timeline, newEntry]);
+};
   if (loading) {
     return <div className='w-10/12 mx-auto mt-25'><FadeLoader className='mx-auto ' color='rgba(36, 77, 63, 1)' /></div>;
   }
@@ -97,15 +109,15 @@ const FriendDetails = () => {
         <div className='ml-3  shadow-sm  bg-white p-4 py-8 rounded-md mt-7.5'>
           <h1 className='mb-5 text-gray-400 font-semibold'>Quick Check-In</h1>
           <div className="grid grid-cols-1 gap-3 md:grid-cols-3 gap-3">
-            <button className='btn  flex-col h-24 gap-2 w-full'>
+            <button onClick={()=>handleCheckIn('Call')} className='btn  flex-col h-24 gap-2 w-full'>
               <FiPhoneCall size={24} />
               <span>Call</span>
             </button>
-            <button className='btn flex-col h-24 gap-2 w-full'>
+            <button onClick={()=>handleCheckIn('Text')} className='btn flex-col h-24 gap-2 w-full'>
               <LuMessageSquareMore size={24} />
               <span>Text</span>
             </button>
-            <button className='btn flex-col h-24 gap-2 w-full'>
+            <button onClick={()=>handleCheckIn('Video')} className='btn flex-col h-24 gap-2 w-full'>
               <PiVideoCameraLight size={24} />
               <span>Video</span>
             </button>
