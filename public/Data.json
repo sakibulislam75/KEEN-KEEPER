@@ -93,5 +93,29 @@
         "bio": "Met on a group trip to Cox's Bazar and we have been inseparable ever since. We plan at least one trip together every year.",
         "goal": 7,
         "next_due_date": "2025-07-28"
+    },
+    {
+        "id": 9,
+        "name": "Fahim Uddin",
+        "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+        "email": "fahim.uddin@gmail.com",
+        "days_since_contact": 15,
+        "status": "almost due",
+        "tags": ["college", "roommate"],
+        "bio": "We shared a dorm room for two years at university. He is now working as an engineer in Khulna. We catch up over calls every few weeks.",
+        "goal": 14,
+        "next_due_date": "2025-07-20"
+    },
+    {
+        "id": 10,
+        "name": "Sumaiya Akter",
+        "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+        "email": "sumaiya.akter@outlook.com",
+        "days_since_contact": 5,
+        "status": "on-track",
+        "tags": ["work", "close friend"],
+        "bio": "We worked on the same project team for a year and became close friends. She recently started her own business and we meet for lunch monthly.",
+        "goal": 10,
+        "next_due_date": "2025-07-25"
     }
 ]
