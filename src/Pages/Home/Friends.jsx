@@ -1,17 +1,21 @@
 import React from 'react';
 import UseData from '../../Hook/UseData';
+import { FadeLoader } from 'react-spinners';
+import { Link } from 'react-router-dom';
 
 const Friends = () => {
     const { fData, loading } = UseData();
 
-    if (loading) return <span className="loading loading-spinner loading-lg block mx-auto mt-10" />;
+
+    if (loading) 
+        return <div className='  my-15'><FadeLoader className='mx-auto 'color='rgba(36, 77, 63, 1)'/></div>;
 
     return (
         <div className='w-10/12 mx-auto my-15'>
             <h2 className="text-xl font-semibold mb-4">Your Friends</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {fData.map((friend) => (
-                    <div key={friend.id} className="card bg-base-100 shadow-sm items-center text-center p-5">
+                    <Link to={`/friens/${friend.id}`} key={friend.id} className="card bg-base-100 shadow-sm items-center text-center p-5">
 
                         <div className="avatar mb-3">
                             <div className="w-20 rounded-full">
@@ -37,7 +41,7 @@ const Friends = () => {
                             {friend.status}
                         </span>
 
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
