@@ -21,6 +21,10 @@ children:[
     ,{
         path:'/Timeline',
         Component:Timeline
+    },
+    {
+        path:'/Timeline',
+        Component:Timeline
     }
   
 ]
